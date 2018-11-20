@@ -1,5 +1,7 @@
 \documentclass[]{article}
+\usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{physics}
 
 %opening
 \title{Appunti di Meccanica Quantistica}
@@ -60,10 +62,45 @@ Si definisce $Acroce$ l'aggiunta di $A$ la matrice che per elementi il trasposto
 
 
 \section{Oscillatore armonico quantistico}
+Supponiamo di essere nel caso di un oscillatore armonico, con $\omega = \sqrt{\frac{K}{m}}$ definito dai vettori (monodimensionali) $(q, p)$. La sua hamiltoniana sarà:
 
+\begin{equation}
+	H(q, p) = K(q, p) + V(q, p) = \frac{p^2}{2m} + \frac{1}{2}m\omega^2q^2
+\end{equation}
 
+Sapendo che l'energia $E \geq 0$, ci chiediamo quale sia lo spettro degli autovalori dell'operatore hamiltoniano $\hat{H}$, ovvero l'insieme dei valori $E \in \mathbb{R}$ tali che:
 
+\begin{equation}
+	\hat{H} \ket{E} = E \ket{E}
+\end{equation}
 
+Supponiamo ancora che lo stato $\ket{E}$ sia descritto da una base ortonormale.
+Quindi $\bra{E}\ket{E} = 1$. Osserviamo che:
+
+\begin{equation}
+	\bra{E}\hat{H}(q, p)\ket{E} = \bra{E}\big(\frac{p^2}{2m} + \frac{1}{2}m\omega^2q^2\big)\ket{E} = \bra{E}\frac{p^2}{2m}\ket{E} - \bra{E}\frac{1}{2}m\omega^2q^2\ket{E}
+\end{equation}
+
+Osserviamo che:
+
+\begin{equation}
+	\bra{E}\hat{H}(q, p)\ket{E} = \bra{E} \big(\hat{H} \ket{E} \big) = E \bra{E}\ket{E} = E \geq 0
+\end{equation}
+
+Ovvero l'energia $E$ altro non è che il valore medio dell'operatore hamiltoniano.
+
+\newpage
+Eguagliando la (4) e la (5) segue che:
+
+\begin{equation}
+	\bra{E}\frac{p^2}{2m}\ket{E} - \bra{E}\frac{1}{2}m\omega^2q^2\ket{E} \geq 0
+\end{equation}
+
+Per calcolare la seguente espressione dobbiamo calcolare $q^2, p^2$, in particolare:
+
+\begin{cases}
+	
+\end{cases}
 
 
 \end{document}
